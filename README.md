@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Elena Cieslik](https://up.htmlacademy.ru/adaptive/30/user/2396071).
-* Наставник: Vladyslav Yermolayev (https://htmlacademy.ru/profile/id128353).
+* Наставник: [Vladyslav Yermolayev](https://htmlacademy.ru/profile/id128353).
 
 ---
 
