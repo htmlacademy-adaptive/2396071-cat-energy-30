@@ -47,50 +47,56 @@
           программу питания для вашего кота
         </p>
         <form class="programs-filter" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="programs-filter-container">
+          <div class="programs-filter__container">
+            <div class="programs-filter__wrapper">
+              <fieldset class="programs-filter__input-list input-list">
+                <legend class="visually-hidden">Данные кота</legend>
+                <div class="input-list__item">
+                  <label class="input-list__label" for="name">ИМЯ:<sup>*</sup></label>
+                  <input class="input-list__field" type="text" name="name" id="name" placeholder="Барсик" required>
+                </div>
+                <div class="input-list__item">
+                  <label class="input-list__label" for="weight">Вес (кг):<sup>*</sup></label>
+                  <input class="input-list__field" type="number" name="weight" id="weight" placeholder="7" required>
+                </div>
+                <div class="input-list__item">
+                  <label class="input-list__label" for="age">Возраст (лет):</label>
+                  <input class="input-list__field" type="number" name="age" id="age" placeholder="7" required>
+                </div>
+              </fieldset>
+              <fieldset class="programs-filter__radio-button-list radio-button-list">
+                <legend class="visually-hidden">Цель программы</legend>
+                <div class="radio-button-list__item radio-button-list__item--checked">
+                  <input class="radio-button-list__input" type="radio" name="weightloss" id="weightloss" checked>
+                  <label class="radio-button-list__label" for="weightloss">Похудение</label>
+                </div>
+                <div class="radio-button-list__item">
+                  <input class="radio-button-list__input" type="radio" name="massgain" id="massgain">
+                  <label class="radio-button-list__label" for="massgain">Набор массы</label>
+                </div>
+                <div class="radio-button-list__item">
+                  <input class="radio-button-list__input" type="radio" name="advice" id="advice">
+                  <label class="radio-button-list__label" for="advice">Не знаю (Нужен ваш совет)</label>
+                </div>
+              </fieldset>
+            </div>
             <fieldset class="programs-filter__input-list input-list">
-              <legend class="visually-hidden">Данные кота</legend>
+              <legend class="input-list__title">Контактные данные (владельца кота)</legend>
               <div class="input-list__item">
-                <label class="input-list__label" for="name">ИМЯ:<sup>*</sup></label>
-                <input class="input-list__field" type="text" name="name" id="name" placeholder="Барсик" required>
-              </div>
-              <div class="input-list__item">
-                <label class="input-list__label" for="weight">Вес (кг):<sup>*</sup></label>
-                <input class="input-list__field" type="number" name="weight" id="weight" placeholder="7" required>
-              </div>
-              <div class="input-list__item">
-                <label class="input-list__label" for="age">Возраст (лет):</label>
-                <input class="input-list__field" type="number" name="age" id="age" placeholder="7" required>
-              </div>
-            </fieldset>
-            <fieldset class="programs-filter__radio-button-list radio-button-list">
-              <legend class="visually-hidden">Цель программы</legend>
-              <div class="radio-button-list__item radio-button-list__item--checked">
-                <input class="radio-button-list__input" type="radio" name="weightloss" id="weightloss" checked>
-                <label class="radio-button-list__label" for="weightloss">Похудение</label>
-              </div>
-              <div class="radio-button-list__item">
-                <input class="radio-button-list__input" type="radio" name="massgain" id="massgain">
-                <label class="radio-button-list__label" for="massgain">Набор массы</label>
-              </div>
-              <div class="radio-button-list__item">
-                <input class="radio-button-list__input" type="radio" name="advice" id="advice">
-                <label class="radio-button-list__label" for="advice">Не знаю (Нужен ваш совет)</label>
-              </div>
-            </fieldset>
-            <fieldset class="programs-filter__input-list input-list">
-              <legend class="input-list__title">Контактные данные<br>
-                (владельца кота)
-              </legend>
-              <div class="input-list__item">
-                <label class="input-list__label" for="email">E-mail:<sup>*</sup></label>
-                <input class="input-list__field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-                <img class="input-list__icon" width="10" height="10" src="#" alt="email">
-              </div>
-              <div class="input-list__item">
-                <label class="input-list__label" for="phone">Телефон:<sup>*</sup></label>
-                <input class="input-list__field" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
-                <img class="input-list__icon" width="10" height="10" src="#" alt="phone">
+                <label class="input-list__label" for="email">
+                  E-mail:<sup>*</sup>
+                  <div class="input-list__input-group input-group">
+                    <input class="input-list__field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                    <img class="input-list__icon" width="10" height="10" src="#" alt="email">
+                  </div>
+                </label>
+                <label class="input-list__label" for="email">
+                  Телефон:<sup>*</sup>
+                  <div class="input-list__input-group input-group">
+                    <input class="input-list__field" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                    <img class="input-list__icon" width="10" height="10" src="#" alt="phone">
+                  </div>
+                </label>
               </div>
             </fieldset>
             <fieldset class="programs-filter__comment-text comment-text">
@@ -116,10 +122,12 @@
                 <label class="checkbox-list__label" for="vitamins">Витамины</label>
               </div>
             </fieldset>
-            <button class="submit-button submit-button--primary" type="submit">
-              <span class="submit-button__text">отправить заявку</span>
-            </button>
-            <small class="programs-filter__text"><sup>*</sup> — Обязательные поля</small>
+            <div>
+              <button class="submit-button submit-button--primary" type="submit">
+                отправить заявку
+              </button>
+              <small class="programs-filter__text"><sup>*</sup> — Обязательные поля</small>  
+            </div>
           </div>
         </form>
       </section>
