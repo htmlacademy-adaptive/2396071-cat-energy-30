@@ -46,11 +46,13 @@
           <h1 class="hero__title">Функциональное<br>питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
           <picture>
+            <source width="720" height="694" type="image/png" media="(min-width: 1440px)" srcset="images/backgrounds/hero-cat-background-desktop@1x.png 1x, images/backgrounds/hero-cat-background-desktop@2x.png 2x">
+            <img class="hero__background" src="images/backgrounds/hero-cat-background-mobile@1x.png" srcset="images/backgrounds/hero-cat-background-mobile@1x.png 2x"  width="320" height="280" alt="Фон с Котом">
+          </picture>
+          <picture>
             <source width="709" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="images/hero/index-cat-tablet@1x.jpg 1x, images/hero/index-cat-tablet@2x.jpg 2x">
             <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero/index-cat@1x.png 1x, images/hero/index-cat@2x.png 2x">
-            <source width="720" height="694" type="image/png" media="(min-width: 1440px)" srcset="images/backgrounds/hero-cat-background-desktop@1x.png 1x, images/backgrounds/images/hero/hero-cat-background-desktop@2x.png 2x">
-            <img src="images/hero/index-cat-mobile@1x.png" srcset="images/hero/index-cat@2x.png 2x" width="320" height="320" alt="Фон с Котом">
-            <img src="images/backgrounds/hero-cat-background-mobile@1x.png" srcset="images/backgrounds/hero-cat-background-mobile@1x.png 2x"  width="320" height="280" alt="Cat Pro Energy">
+            <img class="hero__image" src="images/hero/index-cat-mobile@1x.png" srcset="images/hero/index-cat@2x.png 2x" width="320" height="320" alt="Cat Pro Energy">
           </picture>
           <a class="hero__link hero__link--button" href="form.html">Подобрать программу</a>
         </div>
@@ -143,8 +145,8 @@
       <section class="example-slider">
         <h2 class="example-slider__title">Слайдер фотографии</h2>
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/footer-cat-slider@1x.png 1x, images/hero/footer-cat-slider@2x.png 2x">
-          <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/slider/footer-cat-slider@1x.png 1x, images/hero/footer-cat-slider@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/footer-cat-slider@1x.png 1x, images/slider/footer-cat-slider@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/slider/footer-cat-slider@1x.png 1x, images/slider/footer-cat-slider@2x.png 2x">
           <img class="example-slider__image" src="images/slider/footer-cat-slider-mobile@1x.png" srcset="images/slider/footer-cat-slider-mobile@2x.png 2x" width="280" height="256" alt="Кот слайдер">
         </picture>
       </section>
@@ -158,7 +160,7 @@
               Конюшенная, д. 19/8
               Санкт-Петербург</p>
           </div>
-          <div class="footer__map">
+          <div class="footer__map footer-map">
             <picture>
               <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x">
               <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.jpg 1x, images/map/map-desktop@2x.jpg 2x">
