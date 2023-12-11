@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -45,7 +49,15 @@
         <div class="hero__wrapper">
           <h1 class="hero__title">Функциональное<br>питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <img class="hero__title-image" src="#" width="280" height="270" alt="Cat Pro Energy">
+          <picture>
+            <source width="720" height="694" type="image/png" media="(min-width: 1440px)" srcset="images/backgrounds/hero-cat-background-desktop@1x.png 1x, images/backgrounds/hero-cat-background-desktop@2x.png 2x">
+            <img class="hero__background" src="images/backgrounds/hero-cat-background-mobile@1x.png" srcset="images/backgrounds/hero-cat-background-mobile@1x.png 2x"  width="320" height="280" alt="Фон с Котом">
+          </picture>
+          <picture>
+            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero/index-cat@1x.png 1x, images/hero/index-cat@2x.png 2x">
+            <source width="709" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="images/hero/index-cat-tablet@1x.jpg 1x, images/hero/index-cat-tablet@2x.jpg 2x">
+            <img class="hero__image" src="images/hero/index-cat-mobile@1x.png" srcset="images/hero/index-cat@2x.png 2x" width="320" height="320" alt="Cat Pro Energy">
+          </picture>
           <a class="hero__link hero__link--button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -136,8 +148,11 @@
       </section>
       <section class="example-slider">
         <h2 class="example-slider__title">Слайдер фотографии</h2>
-        <img class="example-slider__image" width="280" height="256" src="#" alt="Кот до">
-        <img class="example-slider__image" width="280" height="256" src="#" alt="Кот после">
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/slider/footer-cat-slider@1x.png 1x, images/slider/footer-cat-slider@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/footer-cat-slider@1x.png 1x, images/slider/footer-cat-slider@2x.png 2x">
+          <img class="example-slider__image" src="images/slider/footer-cat-slider-mobile@1x.png" srcset="images/slider/footer-cat-slider-mobile@2x.png 2x" width="280" height="256" alt="Кот слайдер">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
@@ -149,7 +164,12 @@
               Конюшенная, д. 19/8
               Санкт-Петербург</p>
           </div>
-          <div class="footer__map">
+          <div class="footer__map footer-map">
+            <picture>
+              <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.jpg 1x, images/map/map-desktop@2x.jpg 2x">
+              <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x">
+              <img class="footer-map__image" src="images/map/map-mobile@1x.jpg" srcset="images/map/map-mobile@2x.jpg 2x" width="320" height="326" alt="Карта">
+            </picture>
             <!-- <iframe src="#" width="230" height="362"></iframe> -->
           </div>
         </div>

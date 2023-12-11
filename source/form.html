@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -138,7 +142,12 @@
               Конюшенная, д. 19/8
               Санкт-Петербург</p>
           </div>
-          <div class="footer__map">
+          <div class="footer__map footer-map">
+            <picture>
+              <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.jpg 1x, images/map/map-desktop@2x.jpg 2x">
+              <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x">
+              <img class="footer-map__image" src="images/map/map-mobile@1x.jpg" srcset="images/map/map-mobile@2x.jpg 2x" width="320" height="326" alt="Карта">
+            </picture>
             <!-- <iframe src="#" width="230" height="362"></iframe> -->
           </div>
         </div>
