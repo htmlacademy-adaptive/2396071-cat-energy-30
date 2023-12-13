@@ -2,10 +2,38 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
-body {
-    $bg-color: darkorange;
-    background-color: $bg-color;
-  }
+// index.html
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/programm.scss";
+@import "./blocks/option-list.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer-map.scss";
+@import "./blocks/footer-bottom.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/copyrigth-link.scss";
+// form.html
+@import "./blocks/programs.scss";
+@import "./blocks/input-list.scss";
+@import "./blocks/radio-button-list.scss";
+@import "./blocks/comment-text.scss";
+@import "./blocks/checkbox-list.scss";
+@import "./blocks/submit-button.scss";
+// catalog.html
+@import "./blocks/catalog.scss";
+@import "./blocks/card-list.scss";
+@import "./blocks/item-card.scss";
+@import "./blocks/index-card.scss";
+@import "./blocks/catalog-container.scss";
+@import "./blocks/catalog-more.scss";
+@import "./blocks/link-order.scss";
