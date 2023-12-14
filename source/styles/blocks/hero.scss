@@ -1,0 +1,21 @@
+.hero {
+  font-family: $second-font;
+  text-align: center;
+  color: $base-color-text-white;
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.hero__slogan {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.hero__link {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: $text-uppercase;
+}

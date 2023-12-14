@@ -1,12 +1,12 @@
 /* GLOBAL */
 @import "./global/variables.scss";
 @import "./global/mixins.scss";
-@import "./global/global.scss";
 @import "./global/fonts.scss";
 @import "./global/visually-hidden.scss";
+@import "./global/common.scss";
 
 /* BLOCKS */
-// index.html
+@import "./blocks/button.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
@@ -23,14 +23,12 @@
 @import "./blocks/footer-bottom.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/copyrigth-link.scss";
-// form.html
 @import "./blocks/programs.scss";
 @import "./blocks/input-list.scss";
 @import "./blocks/radio-button-list.scss";
 @import "./blocks/comment-text.scss";
 @import "./blocks/checkbox-list.scss";
 @import "./blocks/submit-button.scss";
-// catalog.html
 @import "./blocks/catalog.scss";
 @import "./blocks/card-list.scss";
 @import "./blocks/item-card.scss";
