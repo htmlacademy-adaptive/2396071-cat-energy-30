@@ -1,10 +1,12 @@
 .input-list {
   text-transform: $text-uppercase;
+  font-weight: 400;
 }
 
 .input-list__title {
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
   color: $base-color-text-black;
   text-transform: none;
 }
@@ -12,11 +14,13 @@
 .input-list__label {
   font-size: 16px;
   line-height: 18px;
+  font-weight: 400;
 }
 
 .input-list__field {
   font-size: 16px;
   line-height: 18px;
+  font-weight: 400;
   color: $base-color-text;
   text-transform: $text-uppercase;
 }

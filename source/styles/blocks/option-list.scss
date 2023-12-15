@@ -6,6 +6,7 @@
   font-family: $second-font;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   color: $base-color-text-black;
   text-transform: $text-uppercase;
   text-align: center;
@@ -13,12 +14,14 @@
 
 .option-list__item-slogan {
   font-family: $primary-font;
+  font-weight: 400;
 }
 
 .option-list__item-link {
   font-family: $second-font;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   color: $base-color-text-black;
   text-transform: $text-uppercase;
   text-align: center;
