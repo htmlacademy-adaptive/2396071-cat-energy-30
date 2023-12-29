@@ -1,3 +1,46 @@
 .main-header {
   font-weight: 400;
 }
+
+.main-header__icon-mobile {
+  display: inline-block;
+  position: absolute;
+  height: 38px;
+  width: 33px;
+  top: 13px;
+  left: 20px;
+  mask-image: url("../../images/icons/stack.svg#logo-mobile");
+  background-color: #FDC305;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.main-header__icon-mobile:hover {
+  opacity: 0.8;
+}
+
+.main-header__icon-mobile:focus {
+  opacity: 0.6;
+}
+
+.main-header__icon-text {
+  display: inline-block;
+  position: absolute;
+  height: 18px;
+  width: 101px;
+  top: 23px;
+  left: 109px;
+  right: auto;
+  mask-image: url("../../images/icons/stack.svg#logo-text");
+  background-color: #111111;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.main-header__icon-text:hover {
+  opacity: 0.8;
+}
+
+.main-header__icon-text:focus {
+  opacity: 0.6;
+}
