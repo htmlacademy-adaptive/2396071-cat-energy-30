@@ -34,3 +34,44 @@
   text-align: center;
   text-transform: $text-uppercase;
 }
+
+.example-slider__range {
+  width: 40px;
+  height: 257px;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  color: #666666;
+  border: none;
+  padding: 0;
+}
+
+.example-slider__range::before _{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  border-radius: 4px;
+  height: 100%;
+  background-color: #666666;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+}
+
+.example-slider__range:hover {
+
+}
+
+.example-slider__range:hover::before {
+
+}
+
+.example-slider__range:active {
+
+}
+
+.example-slider__range:active::before {
+
+}

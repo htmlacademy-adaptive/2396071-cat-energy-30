@@ -14,11 +14,16 @@
     <header class="main-header">
       <div class="main-header__container">
         <div class="main-header__logo">
-          <a class="main-header__icon-mobile" href="/">
-            <span class="visually-hidden">Логотип Кэт</span>
-            <!-- <img src="#" width="10" height="10" alt="Логотип Кэт">
-            <img src="#" width="10" height="10" alt="Логотип Кэт Энерджи"> -->
+          <a class="main-header__icon-mobile" href="/" aria-label="Логотип Кэт">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="images/logo/logo-tablet" type="image/svg+xml">
+              <img src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+            </picture>
           </a>
+          <div class="main-header__logo-text">
+            <img src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип-текст Cat Energy.">
+          </div>
         </div>
         <nav class="main-nav">
           <button class="main-nav__toggle main-nav__toggle--open" type="button" aria-label="Main nav">
