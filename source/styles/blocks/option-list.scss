@@ -33,70 +33,58 @@
   opacity: 0.3;
 }
 
+
+// .option-list__icon-cat-slim::before {
+//   content: "";
+//   border-radius: 50%;
+//   // height: 50px;
+//   // width: 50px;
+//   background-size: 50px 50px;
+//   background-position: center;
+//   background-color: #68B738;
+//   background-repeat: no-repeat;
+//   fill: #000;
+//   // top: 24px;
+//   // left: 20px;
+// }
+
 .option-list__icon-cat-slim {
   display: block;
-  background-image: url("../../images/icons/stack.svg#icon-cat-slim ");
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  background-size: 36px 50px;
-  background-position: center;
-  background-color: #68B738;
-  background-repeat: no-repeat;
-  // top: 24px;
-  // left: 20px;
 }
 
 @media (min-width: 768px) {
   .option-list__icon-cat-slim {
-    display: block;
-    border-radius: 50%;
-    height: 200px;
-    width: 211px;
-    background-size: 140px 194px;
+    background-size: 200px 211px;
     background-position: center;
-    background-color: #68B738;
     background-repeat: no-repeat;
   }
 }
 
 @media (min-width: 1440px) {
   .option-list__icon-cat-slim {
-    display: block;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    background-size: 70px 97px;
+    background-size: 100px 106px;
     background-position: center;
-    background-color: #68B738;
     background-repeat: no-repeat;
   }
 }
 
 .option-list__icon-cat-pro {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  background-color: #68B738;
+  display: block;
 }
 
 @media (min-width: 768px) {
   .option-list__icon-cat-pro {
-    position: absolute;
-    top: 91px;
-    left: 29px;
-    width: 268px;
-    height: 200px;
+    background-size: 268px 200px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: 1440px) {
   .option-list__icon-cat-pro {
-    position: absolute;
-    top: 47px;
-    left: 33px;
-    width: 134px;
-    height: 100px;
+    background-size: 134px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
