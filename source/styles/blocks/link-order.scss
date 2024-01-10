@@ -11,18 +11,14 @@
   background-color: $bg-basic-green;
 }
 
-// .link-order::before {
-//   display: block;
-//   position: absolute;
-//   background-image: url("../../images/icons/stack.svg#icon-gift");
-//   width: 78px;
-//   height: 80px;
-//   background-repeat: no-repeat;
-//   background-size: 78px 80px;
-//   top: 20px;
-//   right: 101px;
-// }
-
-.input-list__icon-gift {
-  background-color: green;
+.link-order::after {
+  display: block;
+  position: absolute;
+  content: url("../../images/icons/stack.svg#icon-gift");
+  width: 78px;
+  height: 81px;
+  background-repeat: no-repeat;
+  // background-size: 78px 80px;
+  bottom: 160px;
+  left: 5px;
 }
