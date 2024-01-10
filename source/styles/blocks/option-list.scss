@@ -76,9 +76,10 @@
   content: "";
   position: absolute;
   display: block;
-  background-image: url("../../images/icons/arrow.svg");
-  background-position: -8px;
-  background-repeat: no-repeat;
+  mask-image: url("../../images/icons/stack.svg#arrow");
+  mask-position: -8px;
+  mask-repeat: no-repeat;
+  background-color: #000000;
   width: 40px;
   height: 40px;
   top: -8px;
@@ -87,7 +88,7 @@
 }
 
 .option-list__arrow:hover::after {
-  background-position: 0;
+  mask-position: 0;
 }
 
 .option-list__arrow:active {
