@@ -24,3 +24,22 @@
   color: $base-color-text;
   text-transform: $text-uppercase;
 }
+
+// .input-list__field::after {
+//   content: "";
+//   position: absolute;
+//   display: block;
+//   mask-image: url("../../images/icons/stack.svg#mail-icon");
+//   mask-repeat: no-repeat;
+//   background-color: #b75252;
+//   width: 18px;
+//   height: 13px;
+// }
+
+// .input-list__icon:focus::after {
+//   background-color: #68B738;
+// }
+
+// .input-list__icon:default::after {
+//   background-color: #FF8282;
+// }
