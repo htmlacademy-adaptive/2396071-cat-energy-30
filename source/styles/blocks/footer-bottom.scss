@@ -1,3 +1,23 @@
 .footer-bottom {
   background-color: #f2f2f2;
 }
+
+.footer-bottom__logo-text {
+  display: block;
+  mask-image: url("../../images/icons/stack.svg#logo-text");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: #111111;
+  width: 128px;
+  height: 24px;
+}
+
+.footer-bottom__logo-text:hover {
+  background-color: #3E3E3E;
+}
+
+.footer-bottom__logo-text:focus {
+  background-color: #6B6B6B;
+}
+
+

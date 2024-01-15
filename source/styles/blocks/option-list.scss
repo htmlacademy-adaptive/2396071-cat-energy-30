@@ -1,4 +1,5 @@
 .option-list__item {
+  position: relative;
   background-color: #d9d9d9;
 }
 
@@ -17,7 +18,51 @@
   font-weight: 400;
 }
 
-.option-list__item-link {
+.option-list__icon-cat-slim {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .option-list__icon-cat-slim {
+    background-size: 200px 211px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1440px) {
+  .option-list__icon-cat-slim {
+    background-size: 100px 106px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.option-list__icon-cat-pro {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .option-list__icon-cat-pro {
+    background-size: 268px 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1440px) {
+  .option-list__icon-cat-pro {
+    background-size: 134px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.option-list__arrow {
+  color: #000000;
+  position: relative;
+  padding-right: 50px;
+  cursor: pointerd;
   font-family: $second-font;
   font-size: 16px;
   line-height: 16px;
@@ -25,4 +70,40 @@
   color: $base-color-text-black;
   text-transform: $text-uppercase;
   text-align: center;
+}
+
+.option-list__arrow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  mask-image: url("../../images/icons/stack.svg#arrow");
+  mask-position: -8px;
+  mask-repeat: no-repeat;
+  background-color: #000000;
+  width: 40px;
+  height: 40px;
+  top: -8px;
+  right: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.option-list__arrow:hover::after {
+  mask-position: 0;
+}
+
+.option-list__arrow:active {
+  opacity: 0.3;
+}
+
+
+@media (min-width: 768px) {
+  .option-list__arrow {
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .option-list__arrow {
+    padding-right: 60px;
+  }
 }
